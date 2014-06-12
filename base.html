@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <link rel='alternate' type='application/rss+xml' title='atom 1.0' href='/feed' />
+    <title>{% block title %} {% endblock %}</title>  
+    {% block seo %} {% endblock %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/t/favicon.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="/t/stylesheets/style.css" />
+    <link rel="stylesheet" href="/t/stylesheets/highlight.css" />
+</head>
+
+<body>
+{% include 'include/sidebar.html' %}
+<div id="wrapper">
+    <div id="main">
+        {% block content %}{% endblock %}
+        {% include 'include/footer.html' %}
+    </div>
+</div>
+</body>
+</html>

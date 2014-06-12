@@ -1,0 +1,13 @@
+{% if paginator.has_previous or  paginator.has_next %}
+<div class="page-nav">
+
+
+    {% if paginator.has_previous %}
+    <a href="{{paginator.previous_page_url}}" class= "old">Newer</a>
+    {% endif %}   
+
+    {% if paginator.has_next %}
+    <a href="{{paginator.next_page_url}}" class="new">Older</a>
+    {% endif %}
+</div>
+{% endif %}

@@ -1,0 +1,364 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+ 
+
+    background: #FFF;
+   
+    font: 18px/190% simsun,"\5FAE\8F6F\96C5\9ED1",tahoma,arial,"\5B8B\4F53";
+    color:#333;
+   
+}
+a{
+    color:#444;
+    text-decoration: none;
+}
+a:hover{
+    color:#000;
+    text-decoration: underline;
+}
+#wrapper{
+    margin: 0 auto;
+    max-width: 970px;
+    border:0px dotted #CCC;
+    
+    
+}
+#header{
+    font-size: 0.75em;
+    margin-bottom: 20px;
+    font-family: 'Microsoft Yahei';
+
+}
+.slogan{
+    border-left: 4px solid #eee;
+    padding: 5px;
+    margin-left: 3px;
+    line-height: 1;
+    color:#999;
+}
+#header h1{
+    font-size: 24px;
+    font-family: '楷体';
+
+}
+#main{
+    width: 700px;
+    border:0px dotted #ff3300;
+    margin-top:100px;
+    float: left;
+}
+
+#sidebar{
+   border:0px dotted #CCC;
+    float:left;
+    width: 150px;
+    height: inherit;
+    text-align: center;
+    margin: 100px 20px 0 100px;
+
+    background: #FFF;
+
+}
+#footer{
+    background: #FFF;
+    height: 50px;
+    color:#ccc;
+    padding: 20px 0;
+    margin-top: 20px;
+    clear: both;
+    font-size: 12px;
+    font-family: 'Microsoft Yahei';
+    
+}
+.nav-bar{
+    
+    margin-top: 10px;
+}
+.nav-bar li{
+  
+
+    list-style: none;
+    border:0px dotted #666;
+    border-bottom: none;
+  
+}
+.logo img{
+    border-radius: 35px;
+    border:5px solid #fefefe;
+    width: 60px;
+    height: 60px;
+}
+.logo img:hover{
+   
+    transition: border 2s;
+    -moz-transition: border 2s; 
+    -webkit-transition:border 2s;  
+    -o-transition:border 2s;
+    border:5px solid #3BA3D0;
+}
+.logo .solgan{
+    font-size: 12px;
+    color:#CCC;
+}
+
+#post-list .list-item{    
+    margin-bottom: 30px;
+    color:#555;
+    border-bottom: 0px dotted #CCC;
+    padding: 10px 0;
+
+
+}
+.list-item h1{
+    font-size: 1.25em;
+    color:#000;
+}
+.list-item .meta{
+    color:#999;
+}
+.list-item .tags{
+    font-family: 'Microsoft Yahei';
+    font-size: 14px;
+}
+.list-item .tags a{
+    margin-right:10px;
+    color:#999;
+}
+
+
+#post{
+    background: #fff;
+    border-radius: 5px;
+    padding: 10px;
+}
+#post .title{
+    font-size: 16px;
+    font-weight: bold;
+}
+#post .meta{
+    font-size: 12px;
+}
+#post .tags{
+    font-size: 12px;
+    margin-bottom: 10px;
+
+}
+#post .content: {
+
+}
+#post-content .title{
+    border-bottom: 1px dotted #CCC;
+    font-size: 1.6em;
+    font-weight: bold;
+
+    padding: 10px 0;
+    font-family: 'adelle', 'Georgia', "Kaiti SC", "KaiTi", serif;
+}
+#post-content img{
+    max-width: 100%;
+}
+
+#post-content li{
+    list-style-position: inside;
+}
+#post-content hr{
+    height:1px;
+    border:none;
+    border-bottom: 1px dotted #CCC;
+    margin:1em 0;
+}
+
+
+#post-content h1{
+    font-size: 1.5em;
+    margin-bottom: 0.2em;
+}
+#post-content h2{
+    font-size: 1.2em;
+    margin-bottom: 0.2em;
+}
+#post-content h3{
+    font-size: 1em;
+    margin-bottom: 0.2em;
+}
+#post-content .tags{
+    font-size: 0.75em;
+    font-family: 'Microsoft Yahei';
+    color:#999;
+
+}
+
+#post-content .meta{
+ 
+    color: #999;
+}
+#post-content .end{
+    
+    margin:10px 0;
+   
+    text-align: center;
+    color: #aaa;
+    font-family:  'adelle', 'Georgia', serif;;
+}
+#post-content .content p{
+    margin-bottom: 1.3em;
+}
+#post-content .content ul{
+    margin-bottom: 1.3em;
+    padding-left: 10px;
+}
+#post-content .content ol{
+    margin-bottom: 1.3em;
+    padding-left: 10px;
+}
+#post-content .content a{
+    border-bottom: 1px dotted #000;
+
+}
+#post-content .content a:hover{
+    text-decoration: none;
+    border-bottom: 1px solid #999;
+}
+.page-nav{
+
+    margin: 10px 0;
+
+}
+.page-nav a{
+    text-decoration: underline;
+}
+
+.page-nav .old{
+    float:left;
+}
+.page-nav .new{
+    float:right;
+}
+.codehilitetable td{
+    border:none;
+}
+blockquote{
+padding: 8px 20px;
+margin: 0 0 22px;
+font-size: 17.5px;
+border-left: 5px solid #eee;
+}
+#post-content blockquote p:last-child{
+    margin-bottom: 0;
+}
+
+code{
+padding: 2px 4px;
+font-size: 0.9em;
+color: #c7254e;
+background-color: #f9f2f4;
+white-space: pre-wrap;
+border-radius: 2px;
+font-family: Courier,simsun,arial;
+}
+table,tr,th,td{
+    border-collapse: collapse;
+}
+th{
+    background-color:whitesmoke;
+}
+
+th,td{
+    border:1px solid #CCC;
+    padding: 5px;
+}
+
+pre{
+    display: block;
+padding: 10.5px;
+margin: 0 0 11px;
+font-size: 0.9em;
+line-height: 1.6;
+word-break: break-all;
+word-wrap: break-word;
+color: #333;
+background-color: whitesmoke;
+border: 1px solid #ccc;
+border-radius: 2px;
+font-family: Courier;
+white-space: pre-wrap;
+}
+
+
+.tags a{
+    margin: 5px 8px;
+    margin-left: 0;
+    border-bottom: 1px #CCC dotted;
+    white-space: nowrap;
+}
+.tags a:hover{
+    text-decoration: none;
+    border-bottom: 1px solid #999;
+}
+.archive-list{
+    list-style-position: inside;
+}
+/**************/
+@media screen and (max-width: 997px){
+    #sidebar{
+        margin-left:10px;
+    }
+
+}
+@media screen and (max-width: 915px){
+    #main{
+        width: inherit;
+        padding: 15px;
+        margin:0;
+        
+    }
+    #sidebar{
+        position: inherit;
+        float: none;
+        margin:10px;
+        width: inherit;
+        
+        
+        text-align: left;
+    }
+    #sidebar h1{
+        text-align: center;
+        font-size: 1.4em !important;
+
+    }
+
+    #post-content .title{
+        font-size: 1.3em;
+        border-bottom: none;
+        padding: 0px;
+    }
+
+    .logo{
+        display: none;
+    }
+    .nav-bar{
+        border-bottom: 1px dotted #ccc;
+        text-align: center;
+    }
+    .nav-bar li{
+        display: inline-block;       
+        padding: 3px 5px;
+        margin:0 5px;
+    }
+    .nav-bar li:before{
+        content: "·";
+    }
+}
+
+@media screen and (max-width: 480px){
+    body{
+        font-size: 16px;
+
+    }
+    #post-content .title{
+        font-size: 1.5em;
+    }
+}

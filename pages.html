@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block title %}{{ post.title }} | {{ site.configs.title or site.title }}{% endblock %}
+
+{% block seo %}
+<meta name="description" content="思维进化录" />
+<meta name="keywords" content="个人提升,个人博客,Linux,Android,产品,互联网" />
+{% endblock %}
+
+
+{% block content %}
+
+        <div id="post-content">
+
+            <div class="list-item">
+                <p class="meta">{{ post.date | date('%Y-%m-%d') }}
+                <p class="title">{{post.title}}</p>
+                {% if post.tags %}                 
+                {% for tag in post.tags %}
+                <a class="tags" href="/tags/{{ tag }}">#{{ tag }}</a>
+                {% endfor %}                
+                {% endif %}
+                </p>
+
+                <div class="content">
+                    {{ post| auto_content }} 
+                    <p class="end">-- The End --</p>                  
+                </div>
+              
+            </div>
+            
+            {% include 'include/pagenav.html' %}
+       
+        </div>
+ 
+{% endblock %}
+
+
+

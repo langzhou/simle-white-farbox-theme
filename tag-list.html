@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}文章标签 | {{ site.configs.title or site.title }}{% endblock %}
+
+{% block seo %}
+<meta name="description" content="思维进化录" />
+<meta name="keywords" content="{{site.configs.keywords}}" />
+{% endblock %}
+
+
+{% block content %}
+
+        <div id="post-content">
+
+            <div class="tags">
+                <h2>全部文章标签:</h2>
+                <p>
+                {% for tag_name, tag_count in site.tags %}
+                <a href="/tags/{{tag_name}}">{{ tag_name }}&nbsp;<span>[{{ tag_count }}]</span></a>
+                {% endfor %}
+                </p>
+            </div>
+       
+        </div>
+ 
+{% endblock %}
+
+
+
